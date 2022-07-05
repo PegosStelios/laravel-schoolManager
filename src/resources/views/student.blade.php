@@ -1,3 +1,7 @@
+@extends('layout')
+
+@section('content')
+
 <h2>
     Name: {{$student['name']}} <br>
     Last Name: {{$student['lastName']}} <br>
@@ -14,3 +18,5 @@
     Class: {{$student['class']}} <br>
     Absent: {{$student['absent']}} <br>
 </h2>
+
+@endsection

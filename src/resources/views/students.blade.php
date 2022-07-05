@@ -1,3 +1,6 @@
+@extends('layout')
+
+@section('content')
 <h1>Students</h1>
 
 @unless (count($students) == 0)
@@ -10,4 +13,7 @@
 
     @endforeach
 
+    @else <h2>No students found</h2>
+
 @endunless
+@endsection
