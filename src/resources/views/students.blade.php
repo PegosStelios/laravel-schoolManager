@@ -6,9 +6,11 @@
 @unless (count($students) == 0)
     @foreach ($students as $student)
         <h2>
-            <a href="/students/{{$student['id']}}">
-                First Name:{{$student['name']}} <br> Last Name:{{$student['lastName']}}
-            </a>
+            <div class="studentList">
+                <a href="/students/{{$student['id']}}">
+                    Student ID: {{$student['id']}} <br>
+                </a>
+            </div>
         </h2>
 
     @endforeach
