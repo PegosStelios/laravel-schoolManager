@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use App\Models\Student;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('students', [
+        'heading' => 'Recent Students',
+        'students' => Student::all()
+    ]);
 });
 
-Route::get('/test', function () {
-    return view('test');
+// Single Student
+
+Route::get('/students/{id}', function ($id) {
+    return view('student', [
+        'student' => Student::find($id)
+    ]);
 });
