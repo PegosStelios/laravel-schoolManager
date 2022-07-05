@@ -12,7 +12,6 @@
         </h2>
 
     @endforeach
-
     @else <h2>No students found</h2>
 
 @endunless

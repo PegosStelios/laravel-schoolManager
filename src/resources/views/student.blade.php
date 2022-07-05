@@ -14,7 +14,7 @@
         Address: {{$student['address']}} <br>
         City: {{$student['city']}} <br>
         Country: {{$student['country']}} <br>
-        Zip COde: {{$student['zip']}} <br>
+        Zip Code: {{$student['zip']}} <br>
         Image: {{$student['image']}} <br>
         Class: {{$student['class']}} <br>
         Absent: {{$student['absent']}} <br>
